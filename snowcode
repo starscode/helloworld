@@ -1,0 +1,29 @@
+#include <iostream>
+#include <fstream>
+#include<stdlib.h>
+#define MAXNUM 200
+#define Loop_10  for(int i=0; i<10; i++)
+int Isood(int n);
+
+using namespace std;
+typedef unsigned char  u8;
+#define max(a,b) ((a)>(b)? (a),(b))
+int main(void)
+{
+    u8 n;
+    cout<<"input n:";
+    cin>>n;
+    
+    int *p;
+    p=(int *)malloc(n*sizeof(int));
+    for(int i=0;i<n;i++)
+    {
+        p[i]=i;
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<p[i]<<" ";
+    }
+    i = max(1, 2);
+    free(p);
+}
